@@ -87,6 +87,7 @@ python main.py
 
 ```
 ├── assets/             # Sprites, tiles, audio
+├── graphics/          # SNES-style graphics spec
 ├── src/                # Python source modules
 │   ├── levels/         # Level-specific logic
 │   ├── engine.py       # Core game loop & renderer

@@ -1,0 +1,50 @@
+{
+    "name": "SNES-style graphics",
+    "version": "1.0.0",
+    "description": "Graphics library for rendering 2D graphics in SNES style",
+    "resolution": {
+        "standard": {
+            "width": 256,
+            "height": 224
+        },
+        "maximum": {
+            "width": 512,
+            "height": 448
+        },
+        "refreshRate": {
+            "NTSC": "60Hz",
+            "PAL": "50Hz"
+        }
+    },
+    "tileSystem": {
+        "backgroundTiles": {
+            "sizes": ["8x8", "16x16"],
+            "tilemap": "1024x1024",
+            "layers": "Multiple (varies by mode)",
+            "effects": ["Parallax scrolling", "Dynamic mode switching"]
+        },
+        "sprites": {
+            "maxOnScreen": 128,
+            "maxPerScanline": 32,
+            "maxSliversPerScanline": 34,
+            "sizes": ["8x8", "16x16", "32x32", "64x64"],
+            "selectableSizes": 2
+        }
+    },
+    "color": {
+        "bitDepth": 15,
+        "totalColors": 32768,
+        "maxOnScreen": 256,
+        "format": "RGB",
+        "paletteSize": 16,
+        "description": "15-bit RGB palette (SNES style)",
+        "effects": ["Color math", "Blending", "Transparency"]
+    },
+    "specialFeatures": {
+        "mode7": "Background rotation and scaling",
+        "mosaic": true,
+        "windowing": true,
+        "highResMode": "512 horizontal pixels"
+    }
+}
+
